@@ -10,7 +10,7 @@ Here it is: Buttbot.
 
 /obj/machinery/bot/buttbot
 	name = "butt bot"
-	desc = "Guaranteed to shitpost for at least 6 months."
+	desc = "Its a butt with a robot arm what do you expect?"
 	icon = 'icons/obj/aibots.dmi'
 	icon_state = "buttbot"
 	layer = 5.0
@@ -68,7 +68,6 @@ Here it is: Buttbot.
 		return
 	if(sincelastfart + 10 < world.timeofday)
 		say("butt")
-		playsound(get_turf(src), 'sound/items/drink.ogg', 50, 1) //slurp
 		sincelastfart = world.timeofday
 
 /obj/machinery/bot/buttbot/Hear(message, atom/movable/speaker, var/datum/language/speaking, raw_message, radio_freq)
@@ -87,7 +86,7 @@ Here it is: Buttbot.
 			prepared_words -= word //Remove from unstuttered words so we don't stutter it again.
 			var/index = split_phrase.Find(word) //Find the word in the split phrase so we can replace it.
 
-			split_phrase[index] = pick("slurp","meta","cuck","filtered","proprietary","white wash","cancer")
+			split_phrase[index] = pick("butt")
 
 		say(list2text(split_phrase," ")) //say() already sanitizes
 		sincelastfart = world.timeofday
@@ -98,10 +97,9 @@ Here it is: Buttbot.
 /obj/machinery/bot/buttbot/explode()
 	src.on = 0
 	src.visible_message("<span class='danger'>[src] blows apart!</span>", 1)
-	playsound(get_turf(src), 'sound/items/drink.ogg', 50, 1) //slurp
 	var/turf/Tsec = get_turf(src)
 	new /obj/item/clothing/head/butt(Tsec)
-	say("FUCKING FILTERED, YOU METAGAMING CUCK! SLURP SLURP SLURP!")
+	say("butt")
 
 	if (prob(50))
 		new /obj/item/robot_parts/l_arm(Tsec)
