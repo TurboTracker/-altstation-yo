@@ -92,8 +92,8 @@ var/global/posibrain_notif_cooldown = 0
 	brainmob.ckey = candidate.ckey
 	name = "positronic brain ([brainmob.name])"
 
-//	brainmob.mind.remove_all_antag()
-//	brainmob.mind.wipe_memory()
+	brainmob.mind.remove_all_antag()
+	brainmob.mind.wipe_memory()
 
 	brainmob << "<span class='userdanger'>ALL PAST LIVES ARE FORGOTTEN.</span>"
 
