@@ -77,9 +77,9 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 ## Default probablity is 1, increase to make that mode more likely to be picked.
 ## Set to 0 to disable that mode.
 
-PROBABILITY TRAITOR 4
+PROBABILITY TRAITOR 3
 PROBABILITY TRAITORCHAN 1
-PROBABILITY DOUBLE_AGENTS 3
+PROBABILITY DOUBLE_AGENTS 4
 PROBABILITY NUCLEAR 4
 PROBABILITY REVOLUTION 1
 PROBABILITY GANG 2
