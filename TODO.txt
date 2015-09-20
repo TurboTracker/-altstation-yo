@@ -14,7 +14,13 @@ Even this list is a work in progress, but this is generally shit we at the bus a
 
 
 **NEW TODO LIST**
-1. Fix DoublE Agent
-2. Decide what to do about chem
-3. Adding antag popup windows
+
+1. Fix Up Double agent
+2. Make decisions on how we want to procceed with Chemistry
+3. Implement Antag Popup windows
+4. Fix Buttbots
+5. Fix Meeseeks
+6. Fix Dakis, or remove if it cant be redeemed
+7. Fix Buttbots so they stick to saying butt
+8. Fix the retarded way ghosting works.
 */
